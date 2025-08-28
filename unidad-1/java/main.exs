@@ -2,11 +2,13 @@ defmodule  Main  do
 
 
 
+
   def main do
 
     pedir_texto()
     pedir_numero()
     pedir_decimal()
+
 
   end
 
@@ -18,7 +20,7 @@ defmodule  Main  do
 
   def pedir_numero() do
     x = Util.input("Ingrese un número: ", :integer)
-    "El número ingresado es entero: #{is_integer(x)}"
+    "El número ingresado es entero: #{is_integer(x)} y el número ingresado es #{Util.numero_positivo_negativo(x)}"
     |> Util.show_message()
   end
 
