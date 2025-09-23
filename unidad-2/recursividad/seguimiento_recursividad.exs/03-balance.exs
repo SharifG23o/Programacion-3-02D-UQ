@@ -1,13 +1,9 @@
-
 defmodule Main do
-
-
   defp calcular_balance_rec([]), do: 0
 
   defp calcular_balance_rec([head | tail]) do
     head + calcular_balance_rec(tail)
   end
-
 
   def main() do
     transacciones = [100, 200, 800, -500, -100]
@@ -19,5 +15,5 @@ defmodule Main do
   end
 end
 
-
 Main.main()
+
