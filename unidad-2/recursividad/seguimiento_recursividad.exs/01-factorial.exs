@@ -1,6 +1,6 @@
 defmodule Main do
   def main do
-    result = Main.of(3)
+    result = of(3)
     IO.puts("Resultado: #{result}")
   end
 

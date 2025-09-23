@@ -1,6 +1,7 @@
 defmodule Main do
   def main do
-    result = Main.elementos_lista([1, 2, 3, 4, 5])
+    list = [1, 2, 3, 4, 5]
+    result = elementos_lista(list, 0)
     IO.puts("Resultado: #{result}")
   end
 
